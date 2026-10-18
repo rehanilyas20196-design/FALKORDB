@@ -98,7 +98,7 @@ def get_cors_origins() -> list[str]:
     if configured_origins is None:
         configured_origins = os.getenv(
             "CORS_ORIGINS",
-            "http://localhost:3000,http://localhost:5173",
+            "http://localhost:3000,http://localhost:5173,https://falkordb.vercel.app",
         )
 
     if isinstance(configured_origins, str):
