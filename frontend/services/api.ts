@@ -5,8 +5,9 @@ function normalizeBaseUrl(baseUrl: string): string {
 }
 
 const RAW_BASE_URL =
+  (import.meta.env.VITE_API_URL as string | undefined)?.trim() ||
   (import.meta.env.VITE_API_BASE_URL as string | undefined)?.trim() ||
-  "http://localhost:8000";
+  "https://falkordb-tfuk.onrender.com";
 
 export const API_BASE_URL = normalizeBaseUrl(RAW_BASE_URL);
 
