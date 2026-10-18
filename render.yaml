@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: falkordb-ai-agent
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+      - key: FALKORDB_HOST
+        sync: false
+      - key: FALKORDB_PORT
+        value: "6379"
+      - key: FALKORDB_PASSWORD
+        sync: false
+      - key: FALKORDB_GRAPH
+        value: "graphguard"
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: "gemini-2.5-flash"
+      - key: CORS_ORIGINS
+        sync: false
+      - key: LOG_LEVEL
+        value: "INFO"

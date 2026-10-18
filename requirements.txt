@@ -1,0 +1,25 @@
+
+# GraphGuard AI - Backend Requirements
+
+# FastAPI application
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+
+# Data validation and configuration
+pydantic>=2.6.0
+pydantic-settings>=2.2.0
+python-dotenv>=1.0.0
+email-validator>=2.0.0
+
+# Graph database
+falkordb>=1.0.8
+
+# Google Gemini AI
+google-generativeai>=0.4.0
+
+# HTTP client and FastAPI testing
+httpx>=0.27.0
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
