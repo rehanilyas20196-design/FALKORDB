@@ -1,0 +1,2 @@
+2026-10-18 13:55:12 | INFO     | graphguard.test | Test message
+2026-10-18 13:55:12 | INFO     | graphguard.security | event_type=TEST_EVENT | Security logging works

@@ -1,0 +1,18 @@
+{
+    "event_type": "suspicious_login",
+    "source": "authentication-server-01",
+    "severity": "high",
+    "description": "Multiple failed login attempts followed by a successful login from an unfamiliar IP address.",
+    "user": "rehan_test",
+    "source_ip": "192.168.1.105",
+    "destination_ip": "192.168.1.10",
+    "timestamp": "2026-10-18T10:30:00Z",
+    "metadata": {
+        "failed_attempts": 5,
+        "successful_login": true,
+        "authentication_method": "password",
+        "source_country": "PK",
+        "environment": "development",
+        "test_event": true
+    }
+}
